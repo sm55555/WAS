@@ -1,4 +1,4 @@
-# 톰캣 힙분석
+# 톰캣 Heap 분석
 
 ps -ef | grep tomcat 후 해당 PID 검색한다.
 
