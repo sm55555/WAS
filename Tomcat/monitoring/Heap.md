@@ -9,7 +9,7 @@ sudo jmap -heap [PID]
 ![image](https://user-images.githubusercontent.com/38831314/115180210-0c217500-a110-11eb-8ac6-007ade598ec1.png)
 
 
-
+만약 Old Generation의 사용량이 지속적으로 증가한다면 memory leak을 의심해봐야 한다. New Generation, Old Generation으 비율은 기본 1:2이다
 
 
 
