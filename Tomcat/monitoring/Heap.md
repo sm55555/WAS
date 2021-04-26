@@ -17,7 +17,6 @@ New Generation, Old Generation으 비율은 기본 1:2이다
 
 ```
 jmap dump:format=b,file=<output filename> <pid>
-
 ```
 
 예시
