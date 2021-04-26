@@ -29,3 +29,8 @@ Heap dump file created
 ```
 
 생성된 hprof 파일 Eclipse Meomory Analyzer.md를 참고해 분석
+
+
+### 참고 URL 네이버 D2
+
+https://d2.naver.com/helloworld/37111
