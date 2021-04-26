@@ -27,3 +27,5 @@ Dumping heap to /home/temp//heap.hprof ...
 Heap dump file created
 [root@test ~]$
 ```
+
+생성된 hprof 파일 Eclipse Meomory Analyzer.md를 참고해 분석
