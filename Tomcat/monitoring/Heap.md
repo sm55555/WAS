@@ -13,4 +13,18 @@ sudo jmap -heap [PID]
 New Generation, Old Generation으 비율은 기본 1:2이다
 
 
+### 메모리 힙덤프 추출
 
+```
+jmap dump:format=b,file=<output filename> <pid>
+
+```
+
+예시
+
+```
+[root@test ~]$ jmap -dump:format=b,file=heap.hprof29991
+Dumping heap to /home/temp//heap.hprof ...
+Heap dump file created
+[root@test ~]$
+```
