@@ -1,5 +1,11 @@
 # 톰캣 Heap 분석
 
+### 실시간 PID 모니터링
+
+```
+jstat -gcutil [PID] 3000 3000
+```
+
 ps -ef | grep tomcat 후 해당 PID 검색한다.
 
 ```
