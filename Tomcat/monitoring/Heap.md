@@ -2,8 +2,9 @@
 
 ### 실시간 PID 모니터링
 
+1초에 한번 씩 출력 3000회 반복
 ```
-jstat -gcutil [PID] 3000 3000
+jstat -gcutil [PID] 1000 3000
 ```
 
 ps -ef | grep tomcat 후 해당 PID 검색한다.
