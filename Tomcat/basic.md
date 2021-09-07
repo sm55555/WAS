@@ -1,4 +1,4 @@
-# Tomcat 기본 설정 관련
+### Tomcat 기본 설정 관련
 
 되도록 기동 시키는 유저는 따로 만들자.
 
@@ -16,14 +16,13 @@ server.xml에 checkedOsUsers="root" 추가하면된다.
   <Listener className="org.apache.catalina.security.SecurityListener" checkedOsUsers="root"/>
 ```
 
-# Tomcat version 확인
+### Tomcat version 확인
 
 bin 폴더에서 ./version.sh 실행
 
 ![image](https://user-images.githubusercontent.com/38831314/121829424-7401cf80-ccfd-11eb-8fe7-1c4e9767dbff.png)
 
-
-# catalina.sh VS setenv.sh
+### catalina.sh VS setenv.sh
 
 bin 폴더에 위치한다.
 
@@ -35,5 +34,20 @@ setenv.sh는 톰캣 구동 시 실행 환경 설정 파일이다.
 
 톰캣 시작 -> startup.sh 호출 -> catalina.sh 호출 -> setenv.sh (파일이 존재하는 경우 설정을 반영한다.)
 
+### web source
 
+server.xml -> appBase 참고 + docBase 추가 될 수 있다.
+
+```
+
+<Host name="localhost"  appBase="webapps"
+            unpackWARs="true" autoDeploy="true">
+            
+            <Context docBase="test/WebContent"
+                path="/test"
+              reloadable="true"
+              source="org.eclipse.jst.jee.server:test"/>
+</Host>
+
+```
 
