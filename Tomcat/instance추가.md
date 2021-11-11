@@ -73,6 +73,16 @@ cp -rp로 복사한다. war파일 오래 걸릴 수 있어 주의
 
 ```
 
+기존 설정
+
+<Server port="8005" shutdown="SHUTDOWN">
+...
+<Connector port="8080" protocol="HTTP/1.1"
+               connectionTimeout="20000"
+               redirectPort="8443" />
+...
+<Connector port="8009" protocol="AJP/1.3" redirectPort="8443" />
+
 신규 설정
 
 <Server port="8105" shutdown="SHUTDOWN">
@@ -85,4 +95,7 @@ cp -rp로 복사한다. war파일 오래 걸릴 수 있어 주의
 <Connector port="8009" protocol="AJP/1.3" redirectPort="8443" />
 
 ```
+
+(3) startup, shutdown sh 관리
+(4) DB 연동 IP 설정(tomcat내 DB 설정 있으면)
 
