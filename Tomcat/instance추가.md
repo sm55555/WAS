@@ -2,6 +2,7 @@
 
 #### Case 1. nginx + tomcat
 
+(1) /etc/nginx/conf.d/virtual.conf
 
 ```
 upstream abc {
@@ -65,3 +66,23 @@ server {
         }
 }
 ```
+
+(2) 새로운 apache 폴더 구성 및 Server.xml 포트 변경
+
+cp -rp로 복사한다. war파일 오래 걸릴 수 있어 주의
+
+```
+
+신규 설정
+
+<Server port="8105" shutdown="SHUTDOWN">
+...
+<Connector port="8081" protocol="HTTP/1.1"
+               connectionTimeout="20000"
+               redirectPort="8543" />
+               
+...
+<Connector port="8009" protocol="AJP/1.3" redirectPort="8443" />
+
+```
+
