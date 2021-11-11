@@ -92,7 +92,7 @@ cp -rp로 복사한다. war파일 오래 걸릴 수 있어 주의
                redirectPort="8543" />
                
 ...
-<Connector port="8009" protocol="AJP/1.3" redirectPort="8443" />
+<Connector port="8109" protocol="AJP/1.3" redirectPort="8543" />
 
 ```
 
