@@ -97,5 +97,6 @@ cp -rp로 복사한다. war파일 오래 걸릴 수 있어 주의
 ```
 
 (3) startup, shutdown sh 관리
+
 (4) DB 연동 IP 설정(tomcat내 DB 설정 있으면)
 
