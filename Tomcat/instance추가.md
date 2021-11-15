@@ -4,7 +4,7 @@
 
 (1) /etc/nginx/conf.d/virtual.conf
 
-```linux
+```
 upstream abc {
         ip_hash;
         server 127.0.0.1:8080;
