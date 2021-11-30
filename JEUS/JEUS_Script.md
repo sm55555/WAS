@@ -34,6 +34,9 @@ jeusadmin -host `hostname`:10000 -domain jeus_domain -u wasadmin -f /home/jeus8/
 
 안된다면 logs 폴더를 만들어 주자 ! 
 
+![image](https://user-images.githubusercontent.com/38831314/143997070-cc2dbf58-5c91-41a2-b80c-275626d05b6d.png)
+
+
 ```
 vi nmboot
 LOGDATE=`date "+%y%m%d%H%M%S"`
