@@ -55,6 +55,10 @@ vi msboot
 startManagedServer -dasurl `hostname`:9736 -domain jeus_domain -server server1  -u administrator -cachelogin -f /home/jeus8/jeus8/bin/jeusEncode
 ```
 
+
+![image](https://user-images.githubusercontent.com/38831314/143998169-4825a306-7653-45c1-9978-bfe56db36189.png)
+
+
 ```
 vi msdown
 jeusadmin -host `hostname`:10010 -domain jeus_domain -u wasadmin -f /home/jeus8/jeus8/bin/jeusEncode -cachelogin "local-shutdown -to 120"
