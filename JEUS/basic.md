@@ -13,4 +13,9 @@ ps -ef | grep java 시 adminServer, NodeManager 확인 가능
 
 MS start, stop은 콘솔 내 or 서버에서 관리 가능하지만, administratorServer, NodeManager는 서버내에서만 컨트롤 가능하다.
 
+### webadmin 접속 방법
+
+```
+http://ip주소:[administratorServer Base Port]/webadmin
+```
 
