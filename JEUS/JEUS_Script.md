@@ -1,14 +1,18 @@
+```
 vi dsboot
 startDomainAdminServer -domain jeus_domain -u administrator -p jeusadmin -cachelogin
-
+```
 -u wasadmin -f /home/jeus8/jeus8/bin/jeusEncode  -cachelogin
 
+```
 vi dsdown
 jeusadmin -host `hostname`:10000 -domain jeus_domain -u wasadmin -f /home/jeus8/jeus8/bin/jeusEncode -cachelogin local-shutdown
+```
 
+```
 vi dsa
 jeusadmin -host `hostname`:10000 -domain jeus_domain -u wasadmin -f /home/jeus8/jeus8/bin/jeusEncode -cachelogin
-
+```
 vi nmboot
 LOGDATE=`date "+%y%m%d%H%M%S"`
 nohup startNodeManager > /home/jeus8/jeus8/logs/nodemanager/nm_$LOGDATE.log &
