@@ -30,11 +30,17 @@ vi dsa
 jeusadmin -host `hostname`:10000 -domain jeus_domain -u wasadmin -f /home/jeus8/jeus8/bin/jeusEncode -cachelogin
 ```
 
+#### 노드매니저 기동
+
+안된다면 logs 폴더를 만들어 주자 ! 
+
 ```
 vi nmboot
 LOGDATE=`date "+%y%m%d%H%M%S"`
 nohup startNodeManager > /home/jeus8/jeus8/logs/nodemanager/nm_$LOGDATE.log &
 ```
+
+#### 노드매니저 종료
 
 ```
 vi nmdown
