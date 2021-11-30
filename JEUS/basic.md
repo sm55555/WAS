@@ -4,7 +4,7 @@ DB 클러스터링도 메모리 잡아먹음
 
 administratorServer(DAS의 한가지 기능) 켜야 -> NodeManager 기동해야 -> 하위 MS들을 관리할 수 있다.
 
-````
+```
 ps -ef | grep java 시 adminServer, NodeManager 확인 가능
 ```
 
