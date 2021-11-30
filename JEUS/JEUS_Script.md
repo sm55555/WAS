@@ -52,7 +52,7 @@ stopNodeManager -properties /home/jeus8/jeus8/nodemanager/jeusnm.xml
 
 ```
 vi msboot
-startManagedServer -dasurl `hostname`:10000 -domain jeus_domain -server $1  -u wasadmin –cachelogin –f /home/jeus8/jeus8/bin/jeusEncode
+startManagedServer -dasurl `hostname`:9736 -domain jeus_domain -server server1  -u administrator -cachelogin -f /home/jeus8/jeus8/bin/jeusEncode
 ```
 
 ```
