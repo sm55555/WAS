@@ -1,15 +1,29 @@
-### 기본 명령어
+## 기본 명령어
+
+#### 비밀번호 webadmin 노출 기동
 
 ```
 vi dsboot
 startDomainAdminServer -domain jeus_domain -u administrator -p jeusadmin -cachelogin
 ```
--u wasadmin -f /home/jeus8/jeus8/bin/jeusEncode  -cachelogin
+
+![image](https://user-images.githubusercontent.com/38831314/143995873-f6900300-b2dd-4a70-a145-22fe9ed33cd7.png)
+
+.jeuspasswd를 /home/jeus8/jeus8/bin/jeusEncode 로 복사하고 사용 해야한다 !
+
+#### 비밀번호 암호화 webadmin 기동
+
+```
+startDomainAdminServer -domain jeus_domain -u administrator -u wasadmin -f /home/jeus8/jeus8/bin/jeusEncode  -cachelogin
+```
+
+#### 비밀번호 암호화 webadmin 종료
 
 ```
 vi dsdown
-jeusadmin -host `hostname`:10000 -domain jeus_domain -u wasadmin -f /home/jeus8/jeus8/bin/jeusEncode -cachelogin local-shutdown
+jeusadmin -host `hostname`:9736 -domain jeus_domain -u administrator -f /home/jeus8/jeus8/bin/jeusEncode -cachelogin local-shutdown
 ```
+
 
 ```
 vi dsa
