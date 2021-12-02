@@ -12,7 +12,12 @@
    경로 :  /data/was/jboss/jboss-eap-7.2/modules.ext/com/maira/main
  * 수정사항 : module name, resource-root path
    vim module.xml
- ------
+ 
+ 
+ 
+ -------------------------------------------------
+ 
+ 
 <?xml version="1.0" encoding="UTF-8"?>
 
 <module name="com.maria" xmlns="urn:jboss:module:1.8">  --> module name 변경
@@ -31,9 +36,8 @@
   경로 : /data/was/domains/hgdev-was1/configuration/standalone.xml
 -----------
                     <connection-url>jdbc:mariadb:aurora://hghan-dev.cluster-c4iyx6guogte.ap-northeast-2.rds.amazonaws.com:3831/hanway_dev_gw?autoReconnect=true</connection-url>
-...
                   <driver>maria</driver>
-...
+
                     <driver name="maria" module="com.maria">
                         <driver-class>org.mariadb.jdbc.Driver</driver-class>
                     </driver> 
