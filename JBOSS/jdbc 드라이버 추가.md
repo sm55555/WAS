@@ -20,9 +20,9 @@
  
 <?xml version="1.0" encoding="UTF-8"?>
 
-<module name="com.maria" xmlns="urn:jboss:module:1.8">  --> module name 변경
+<module name="com.maria" xmlns="urn:jboss:module:1.8">  -> module name 변경
     <resources>
-        <resource-root path="mariadb-java-client-2.7.3.jar"/>   --> jdbc jar 명 입력
+        <resource-root path="mariadb-java-client-2.7.3.jar"/>   -> jdbc jar 명 입력
     </resources>
     <dependencies>
         <module name="javax.api"/>
