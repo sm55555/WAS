@@ -40,10 +40,11 @@
 ```
 
 /data/was/jboss/jboss-eap-7.2/modules.ext/com/oracle/main에서 -> jdbc driver 파일의 권한을 jboss 계정으로 변경
--rw-r----- 1 jboss appgrp 3389454 Dec 29 14:52 ojdbc6.jar
+
+<strong>-rw-r----- 1 jboss appgrp 3389454 Dec 29 14:52 ojdbc6.jar</strong>
 
   
-2. Datasource lookup fail
+##### 2. Datasource lookup fail
 -> jndi name 수정(standalone.xml)  
   
 ```
