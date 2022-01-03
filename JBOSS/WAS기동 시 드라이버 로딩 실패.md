@@ -52,7 +52,7 @@
 <connection-url>jdbc:oracle:thin:@hjgma-db03.cx6o7aubfgep.ap-northeast-2.rds.amazonaws.com:1521:hjgma03</connection-url>  
 ```  
   
-Datasource connection test : bin 디렉토리 jboss-cli.sh 실행
+Datasource connection test : bin 디렉토리 <strong>jboss-cli.sh</strong> 실행
   
 ```
 [standalone@10.10.10.11:7877 /] /subsystem=datasources/data-source=ORGABDS:test-connection-in-pool
