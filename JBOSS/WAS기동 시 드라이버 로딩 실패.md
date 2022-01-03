@@ -9,7 +9,7 @@
 ###### 1. WAS 기동시 jdbc driver를 로딩 하지 못하는 현상
 
 -> standalone.xml 을 다음과 같이 수정 :
-<xa-datasource-class> 태그 삭제 및 <driver> 태그 내 module 이름을 com.oracle로 변경
+<xa-datasource-class> 태그 삭제 및 <driver> 태그 내 module 이름을 <strong>com.oracle</strong>로 변경
 
 ```
 
