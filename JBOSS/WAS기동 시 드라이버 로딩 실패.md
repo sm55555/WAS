@@ -6,7 +6,7 @@
 - Datasource lookup fail 발생
 
 
-###### 1. WAS 기동시 jdbc driver를 로딩 하지 못하는 현상
+##### 1. WAS 기동시 jdbc driver를 로딩 하지 못하는 현상
 
 -> standalone.xml 을 다음과 같이 수정
 
